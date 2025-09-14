@@ -64,6 +64,7 @@ body {
     text-decoration: none;
     color: inherit;
     transition: color 0.2s ease;
+    text-wrap: stable;
 }
 
 .header__text:hover {
@@ -294,6 +295,31 @@ body {
 
 .text--bold {
     font-weight: bold;
+}
+
+.content_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    li {
+        list-style-type: none;
+    }
+}
+
+.content_row.reverse {
+    direction: rtl;
+}
+
+.content_row__image {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
 }
 
 /* Add responsive breakpoints */

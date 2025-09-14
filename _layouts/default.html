@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Award-Winning Coffee Shop & Gin Bar | The Lounge Bars</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/a1d3db02cb.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" type="image/png" href="favicon.png" />
+    </head>
+    <body>
+        <!--Header-->
+        {% include header.html %}
+
+        <!-- Content will go here -->
+        <main style="text-align: center">{{ content }}</main>
+
+        <!--Footer-->
+        {% include footer.html %}
+
+        <script>
+            let currentSlide = 0;
+            const totalSlides = 3;
+
+            function moveCarousel(direction) {
+                currentSlide += direction;
+
+                if (currentSlide < 0) {
+                    currentSlide = totalSlides - 1;
+                } else if (currentSlide >= totalSlides) {
+                    currentSlide = 0;
+                }
+
+                const track = document.getElementById("carousel-track");
+                const translateX = -currentSlide * 250; // 250px is the width of each image
+                track.style.transform = `translateX(${translateX}px)`;
+
+                // Update button states
+                const prevBtn = document.getElementById("prev-btn");
+                const nextBtn = document.getElementById("next-btn");
+
+                prevBtn.disabled = false;
+                nextBtn.disabled = false;
+            }
+        </script>
+    </body>
+</html>

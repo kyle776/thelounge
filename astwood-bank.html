@@ -1,0 +1,42 @@
+---
+layout: default
+location: ab
+hover_panel__title: ASTWOOD BANK
+hover_panel__subtitle: 1244, Evesham Road, Astwood Bank
+row1:
+    title: Welcome to The Lounge @ 1244
+    image: images/astwood-bank-martini.jpeg
+    paragraphs:
+        - content: Louise, Karl and Team welcome you to The Lounge!
+        - content: We took over The Lounge in February 2020 – a month before the pandemic and were forced to go into lockdown, not the best timing, but we are still here and going strong
+        - content: Through lockdown with all the imposed restrictions we were the first establishment in Redditch to open for takeaway cocktails keeping everyone happy and hydrated; from locals to those passing through on their way home from work.
+        - content: The Lounge is a small Gin & Cocktail Bar situated on Evesham Road in Astwood Bank that can seat up to 32 cocktail lovers inside with a small seating area at the front for 8 people.
+row2:
+    title: Relax, we've got you covered!
+    image: images/astwood-bank-drink.jpeg
+    paragraphs:
+        - content: We offer upwards of 60 gins all served with Fever Tree tonic, 65+ *AMAZING* cocktails, all made with premium ingredients and double measures as a minimum, a tasty selection of Lilleys Ciders and Atlantic IPA, Blue Moon Belgian Wheat Beer and Offshore Pilsner on draught. A selection of soft drinks and mouth-watering milkshakes are available for our younger guests.
+        - content: We love your furry friends here at The Lounge which is why we are fully prepared with treats for them should you wish to pop along during walkies and sit outside and watch the world go by for a bit.
+        - content: The Lounge is a friendly, welcoming and safe place to enjoy a catch up with friends, a birthday, anniversary, hen party, pre-dinner drinks, post dinner drinks or just because drinks
+---
+
+<section
+    class="hover_panel"
+    style="--hover-panel-url: url(&quot;images/lounge-card.jpeg&quot;)"
+>
+    <h1 class="hover_panel__title">{{page.hover_panel__title}}</h1>
+    <p class="hover_panel__subtitle">{{page.hover_panel__subtitle}}</p>
+</section>
+<section>{% include content_row.html content=page.row1 %}</section>
+<section>{% include content_row.html content=page.row2 reverse=true %}</section>
+<section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.1835056997165!2d-1.9399385233370503!3d52.25821265557857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870c3fff4109c39%3A0x771f827d261a0dd3!2sThe%20Lounge!5e0!3m2!1sen!2suk!4v1757862871670!5m2!1sen!2suk"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+</section>

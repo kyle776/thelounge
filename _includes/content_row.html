@@ -1,0 +1,13 @@
+<div class="content_row {% if include.reverse %}reverse{% endif %}">
+    <div>
+        <h2 class="section__title">{{ include.content.title }}</h2>
+        <ul>
+            {% for para in include.content.paragraphs %}
+            <li class="card-text">{{ para.content }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <img class="content_row__image" src="{{ include.content.image }}" />
+    </div>
+</div>
