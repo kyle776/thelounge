@@ -60,6 +60,16 @@ body {
     padding-left: 20px;
 }
 
+.header__text {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+.header__text:hover {
+    color: var(--lounge-red);
+}
+
 .header__text_selected {
     color: var(--lounge-red);
 }
