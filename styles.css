@@ -26,11 +26,17 @@ body {
 /*HEADER*/
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--lounge-blue);
     color: white;
     position: relative;
+
+    i {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .header__logo {
