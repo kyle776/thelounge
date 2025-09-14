@@ -88,7 +88,7 @@ body {
 .content {
     display: flex;
     justify-content: space-around;
-    padding: 40px 40px 0px 40px;
+    padding: 40px;
     flex-wrap: wrap; /* Allow cards to wrap */
     gap: 20px; /* Add consistent spacing */
 }
@@ -160,6 +160,14 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(201, 101, 112, 0.3);
 }
+
+.footer {
+    background-color: var(--lounge-blue);
+    padding: 20px 60px 20px 60px;
+    color: white;
+    position: relative;
+}
+
 /* Add responsive breakpoints */
 @media (max-width: 768px) {
     .content {
