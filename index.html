@@ -27,30 +27,57 @@
                 <p class="hover_panel__subtitle">Alcester and Astwood Bank</p>
             </section>
             <section class="content">
-                <div class="lounge-card">
-                    <div class="card-image">
-                        <img src="images/lounge-card.jpeg"/>
+                <h1 class="section__title">Locations</h1>
+                <div class="locations">
+                    <div class="lounge-card">
+                        <div class="card-image">
+                            <img src="images/lounge-card.jpeg"/>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">The Lounge @ 1244, Evesham Road, Astwood Bank</h2>
+                            <p class="card-subtitle">Louise, Karl and Team welcome you to The Lounge!</p>
+                            <p class="card-text">We took over The Lounge in February 2020 – a month before the pandemic and were forced to go into lockdown, not the best timing, but we are still here and going strong</p>
+                            <p class="card-text">Through lockdown with all the imposed restrictions we were the first establishment in Redditch to open for takeaway cocktails keeping everyone happy and hydrated; from locals to those passing through on their way home from work.</p>
+                            <p class="card-text">The Lounge is a small Gin & Cocktail Bar situated on Evesham Road in Astwood Bank that can seat up to 32 cocktail lovers inside with a small seating area at the front for 8 people.</p>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h2 class="card-title">The Lounge @ 1244, Evesham Road, Astwood Bank</h2>
-                        <p class="card-subtitle">Louise, Karl and Team welcome you to The Lounge!</p>
-                        <p class="card-text">We took over The Lounge in February 2020 – a month before the pandemic and were forced to go into lockdown, not the best timing, but we are still here and going strong</p>
-                        <p class="card-text">Through lockdown with all the imposed restrictions we were the first establishment in Redditch to open for takeaway cocktails keeping everyone happy and hydrated; from locals to those passing through on their way home from work.</p>
-                        <p class="card-text">The Lounge is a small Gin & Cocktail Bar situated on Evesham Road in Astwood Bank that can seat up to 32 cocktail lovers inside with a small seating area at the front for 8 people.</p>
-                        <button class="learn-more-btn">Learn More</button>
+                    <div class="lounge-card">
+                        <div class="card-image">
+                            <img src="images/lounge-26-card.jpeg"/>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">The Lounge @ 1244, Evesham Road, Astwood Bank</h2>
+                            <p class="card-subtitle">Louise, Karl and Team welcome you to The Lounge!</p>
+                            <p class="card-text">We took over The Lounge in February 2020 – a month before the pandemic and were forced to go into lockdown, not the best timing, but we are still here and going strong</p>
+                            <p class="card-text">Through lockdown with all the imposed restrictions we were the first establishment in Redditch to open for takeaway cocktails keeping everyone happy and hydrated; from locals to those passing through on their way home from work.</p>
+                            <p class="card-text">The Lounge is a small Gin & Cocktail Bar situated on Evesham Road in Astwood Bank that can seat up to 32 cocktail lovers inside with a small seating area at the front for 8 people.</p>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
-                <div class="lounge-card">
-                    <div class="card-image">
-                        <img src="images/lounge-26-card.jpeg"/>
+            </section>
+            <section class="container">
+                <h1 class="section__title">Award Winning</h1>
+                <p class="section__paragraph">We are thrilled to announce we were the winners of Best Cafe in England in 2021 and have been recommended on Restaurant Guru!</p>
+
+                <!-- Grid layout for larger screens -->
+                <div class="image-container">
+                    <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Best+in+England.jpg"/>
+                    <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Team+Lounge%21.png" />
+                    <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Screenshot+2022-10-21+at+13.31.11.png" />
+                </div>
+
+                <!-- Carousel for mobile screens -->
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Best+in+England.jpg"/>
+                        <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Team+Lounge%21.png" />
+                        <img class="square-image" src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Screenshot+2022-10-21+at+13.31.11.png" />
                     </div>
-                    <div class="card-content">
-                        <h2 class="card-title">The Lounge @ 1244, Evesham Road, Astwood Bank</h2>
-                        <p class="card-subtitle">Louise, Karl and Team welcome you to The Lounge!</p>
-                        <p class="card-text">We took over The Lounge in February 2020 – a month before the pandemic and were forced to go into lockdown, not the best timing, but we are still here and going strong</p>
-                        <p class="card-text">Through lockdown with all the imposed restrictions we were the first establishment in Redditch to open for takeaway cocktails keeping everyone happy and hydrated; from locals to those passing through on their way home from work.</p>
-                        <p class="card-text">The Lounge is a small Gin & Cocktail Bar situated on Evesham Road in Astwood Bank that can seat up to 32 cocktail lovers inside with a small seating area at the front for 8 people.</p>
-                        <button class="learn-more-btn">Learn More</button>
+                    <div class="carousel-buttons">
+                        <button class="carousel-btn" id="prev-btn" onclick="moveCarousel(-1)">‹ Prev</button>
+                        <button class="carousel-btn" id="next-btn" onclick="moveCarousel(1)">Next ›</button>
                     </div>
                 </div>
             </section>
@@ -58,7 +85,55 @@
 
         <!--Footer-->
         <footer class="footer">
-            This is my footer
+                <img src="https://lirp.cdn-website.com/ed3314ea/dms3rep/multi/opt/The_Lounge_logo-1-30d9a26f-1920w.png" />
+                <ul class="contact">
+                    <li class="text--bold">Astwood Bank</li>
+                    <li>
+                        <span class="text--bold">Phone:</span>
+                        01527 893965
+                    </li>
+                    <li>
+                        <span class="text--bold">Email:</span>
+                        thelounge1244@outlook.com
+                    </li>
+                </ul>
+                <ul class="contact">
+                    <li class="text--bold">Alcester</li>
+                    <li>
+                        <span class="text--bold">Phone:</span>
+                        01789 764982
+                    </li>
+                    <li>
+                        <span class="text--bold">Email:</span>
+                        thelounge26@hotmail.com
+                    </li>
+                </ul>
         </footer>
+
+        <script>
+            let currentSlide = 0;
+            const totalSlides = 3;
+
+            function moveCarousel(direction) {
+                currentSlide += direction;
+
+                if (currentSlide < 0) {
+                    currentSlide = totalSlides - 1;
+                } else if (currentSlide >= totalSlides) {
+                    currentSlide = 0;
+                }
+
+                const track = document.getElementById('carousel-track');
+                const translateX = -currentSlide * 250; // 250px is the width of each image
+                track.style.transform = `translateX(${translateX}px)`;
+
+                // Update button states
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+
+                prevBtn.disabled = false;
+                nextBtn.disabled = false;
+            }
+        </script>
     </body>
 </html>
