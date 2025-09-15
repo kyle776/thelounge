@@ -18,6 +18,114 @@ row2:
         - content: We offer upwards of 60 gins all served with Fever Tree tonic, 65+ *AMAZING* cocktails, all made with premium ingredients and double measures as a minimum, a tasty selection of Lilleys Ciders and Atlantic IPA, Blue Moon Belgian Wheat Beer and Offshore Pilsner on draught. A selection of soft drinks and mouth-watering milkshakes are available for our younger guests.
         - content: We love your furry friends here at The Lounge which is why we are fully prepared with treats for them should you wish to pop along during walkies and sit outside and watch the world go by for a bit.
         - content: The Lounge is a friendly, welcoming and safe place to enjoy a catch up with friends, a birthday, anniversary, hen party, pre-dinner drinks, post dinner drinks or just because drinks
+drinks_menu:
+    title: Drinks Menu
+    categories:
+        - title: Rum Cocktails
+          options:
+              - Pina Colada
+              - Strawberry Daiquiri
+              - Classic Mojito
+              - Dead Mans Fingers
+              - Frozen Fingers
+              - Cold & Dark
+        - title: Vodka Cocktails
+          options:
+              - Raspberry Collins
+              - Porn Star Martini
+              - Caramel Espresso Martini
+              - French Martini
+              - Woo Woo
+              - Cosmopolitan
+        - title: Gin Cocktails
+          options:
+              - Gin Sling
+              - Elderflower Collins
+              - British Bramble
+              - Raspberry Martini
+        - title: Prosecco Cocktails
+          options:
+              - Rosecco Royal
+              - Raspberry Limoncello Cooler
+              - Blushing Bellini
+              - English Garden
+        - title: Something Different
+          options:
+              - Raspberry Crème Brulee
+              - Long Island Ice Tea
+              - Amaretto Sour
+              - Margarita
+              - Frozen Fingers
+              - Cold & Dark
+        - title: Mocktails
+          options:
+              - Pina Colada
+              - Mojito
+              - Strawberry
+              - Daiquiri
+        - title: Milkshakes
+          options:
+              - Galaxy
+              - Oreo
+              - Strawberry
+              - Banana
+        - title: Draught Beer
+          options:
+              - Offshore Pilsner
+              - Blue Moon
+              - Atlantic IPA
+        - title: Whiskey
+          options:
+              - Bumbu
+              - Woodford Reserve
+        - title: Rums
+          options:
+              - Dead Mans Fingers Rums (large selection)
+              - Banana
+              - Spiced
+              - Chilli
+              - Raspberry
+              - Lime
+              - Passionfruit
+              - Coconut
+              - Coffee
+              - and more
+
+        - title: Wine & Prosecco
+          options:
+              - Pinot
+              - Merlot
+              - Zinfandel
+              - Prosecco (available by glass or bottle)
+        - title: Soft Drinks
+          options:
+              - Coke
+              - Diet Coke
+              - Lemonade
+              - Ginger Beer
+        - title: Hot Drinks
+          options:
+              - Tea
+              - Coffee
+              - Hot Chocolate
+              - Baileys Hot Chocolate
+        - title: Other Spirits
+          options:
+              - Selection of other spirits available
+        - title: Ciders
+          options:
+              - Lilleys Cider (bottled selection)
+        - title: Gins
+          options:
+              - 65+ gins served with premium Fever Tree Tonics
+opening_hours:
+    - Sunday – Closed
+    - Monday – Closed
+    - Tuesday – Closed
+    - Wednesday – Closed
+    - Thursday – 5.00pm – 10.30pm
+    - Friday – 5.00pm – 11.00pm
+    - Saturday – 4.00pm – 11.00pm
 ---
 
 <section
@@ -29,6 +137,11 @@ row2:
 </section>
 <section>{% include content_row.html content=page.row1 %}</section>
 <section>{% include content_row.html content=page.row2 reverse=true %}</section>
+<section>{% include menu.html content=page.drinks_menu %}</section>
+<section>{% include opening_hours.html content=page.opening_hours %}</section>
+<section style="margin-top: 25px">
+    We can seat up to 34 inside and 8 at the front outside of the shop
+</section>
 <section>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.1835056997165!2d-1.9399385233370503!3d52.25821265557857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870c3fff4109c39%3A0x771f827d261a0dd3!2sThe%20Lounge!5e0!3m2!1sen!2suk!4v1757862871670!5m2!1sen!2suk"

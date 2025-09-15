@@ -136,6 +136,26 @@ body {
     width: 120px;
 }
 
+.section__subtitle {
+    color: var(--lounge-blue);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/*.section__subtitle::before,
+.section__subtitle::after {
+    content: "";
+    height: 2px;
+    background: var(--lounge-red);
+    margin: 0 30px;
+    width: 90px;
+}*/
+
 .section__paragraph {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -314,12 +334,39 @@ body {
     direction: rtl;
 }
 
+.content_row.reverse > * {
+    direction: ltr;
+}
+
 .content_row__image {
     width: 100%;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+}
+
+.menu {
+    margin: 25px 35px 25px 35px;
+}
+
+.menu__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .menu__row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.menu__category {
+    li {
+        list-style-type: none;
+    }
 }
 
 /* Add responsive breakpoints */
@@ -363,6 +410,10 @@ body {
     .card-text {
         font-size: 14px;
     }
+
+    .menu__row {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
 }
 
 @media (max-width: 480px) {
@@ -381,5 +432,9 @@ body {
     .learn-more-btn {
         padding: 12px 24px;
         font-size: 16px;
+    }
+
+    .menu__row {
+        grid-template-columns: 1fr;
     }
 }

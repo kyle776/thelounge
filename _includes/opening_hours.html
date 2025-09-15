@@ -1,0 +1,8 @@
+<div class="menu">
+    <div class="section__title">Opening hours</div>
+    <ul>
+        {% for day in include.content %}
+        <li>{{ day }}</li>
+        {% endfor %}
+    </ul>
+</div>

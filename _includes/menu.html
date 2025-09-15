@@ -1,0 +1,15 @@
+<div class="menu">
+    <div class="section__title">{{ include.content.title }}</div>
+    <div class="menu__row">
+        {% for category in include.content.categories %}
+        <div class="menu__category">
+            <div class="section__subtitle">{{ category.title }}</div>
+            <ul>
+                {% for option in category.options %}
+                <li>{{ option }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
