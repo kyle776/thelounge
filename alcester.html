@@ -3,6 +3,119 @@ layout: default
 location: a
 hover_panel__title: ALCESTER
 hover_panel__subtitle: 26 High Street, Alcester
+row1:
+    title: Welcome to the lounge @ 26
+    image: images/alcester-drinks.jpeg
+    paragraphs:
+        - content: Louise, Karl and Team welcome you to The Lounge @ 26!
+        - content: Taking over a Coffee Shop during the second lockdown in November 2020 may not have been the best idea but we did it anyway and haven’t looked back! We are now an award winning establishment after being nominated for, and winning Best Café in Warwickshire, Best Café in the Midlands and then Best Café in England in 2021.
+        - content: During lockdown and restrictions we were able to keep customers warm and caffeinated with takeaway coffees, cakes and food, and took that time to develop the outside area and decorate.
+        - content: You’ll find us situated on the High Street in Alcester in a quirky Grade II listed building that can seat up to 30 inside, 8 outside on the high street and up to 40 in what we like to call our secret garden.
+row2:
+    title: Relax, we've got you covered!
+    image: images/alcester-food.jpeg
+    paragraphs:
+        - content: In July 2021 we added another string to our bow and opened on Friday and Saturday evenings as a Gin & Cocktail bar, and what a hit our cocktails have been!
+        - content: We offer upwards of 50 gins all served with Fever Tree tonic, 20+ *AMAZING* cocktails, all made with premium ingredients and double measures as a minimum and Aspalls Cider, Blue Moon Belgian Wheat Beer and Offshore Pilsner on draught. A selection of soft drinks and mouth-watering milkshakes are available for our younger guests.
+        - content: We love your furry friends here at The Lounge @ 26 which is why we are fully prepared with treats for them should you wish to pop along during walkies and sit outside and watch the world go by for a bit.
+        - content: The Lounge @ 26 is a friendly, welcoming and safe place to enjoy a catch up with friends, a birthday, anniversary, hen party, pre-dinner drinks, post dinner drinks or just because drinks.
+day_menu:
+    title: Day menu
+    categories:
+        - title: Coffee
+          options:
+              - Latte
+              - Cappuccino
+              - Americano
+              - Mocha
+              - Chai Latte
+              - Dirty Chai latte
+              - Espresso
+              - Hot Chocolate
+              - Hot Chocolate Special (cream & marshmallows)
+              - Babyccino
+        - title: Tea
+          options:
+              - Earl Grey
+              - Green Tea
+              - Peppermint
+              - Camomile
+              - Fruit Tea
+        - title: Milkshakes
+          options:
+              - Vanilla
+              - Strawberry
+              - Banana
+              - Mint Chocolate
+              - Oreo
+              - Biscoff
+              - Galaxy
+        - title: Fentimans
+          options:
+              - Rose Lemonade
+              - Victorian Lemonade
+              - Dandelion & Burdock
+              - Sparkling Elderflower
+              - Mandarin & Seville Orange Jigger
+        - title: Soft Drinks
+          options:
+              - Coke
+              - Diet Coke
+              - Lemanade
+              - Ginger Beer
+              - Fruit Shoots
+              - Apple Juice
+              - Orange Juice
+        - title: Sandwiches
+          options:
+              - Cheese
+              - Ham
+              - Cheese & Ham
+              - BLT
+              - Brie & Cranberry
+              - Cheese Salad
+              - Ham Salad
+              - Cheese & Ham Salad
+              - Bacon Brie & Cranberry
+              - Bacon Sandwich
+              - Sausage Sandwich
+              - Bacon & Sausage Sandwich
+
+        - title: Cakes
+          options:
+              - A selection of double layer cake available
+              - Gluten free options available
+              - Danish Pastries
+              - Muffins
+              - Millionaire Shortbread
+              - Granola
+              - Blondies
+              - Toasted Tea Cakes
+        - title: Scones
+          options:
+              - Cherry & Almond or Fruit – served with butter, butter & jam or Roddas clotted cream & Jam
+              - Cheese Scone – served with butter or butter and onion chutney
+
+        - title: Paninia and Toasties
+          options:
+              -Cheese
+              - Ham
+              - BLT
+              - Cheese & Ham
+              - Brie & Cranberry
+              - Bacon Brie & Cranberry
+              - available on white or brown bloomer bread, served with a salad garnish & crisps
+        - title: Toasted Bagles
+          options:
+              - Plain
+              - Cream Cheese
+              - Sausage
+              - Bacon
+              - Cream Cheese & Bacon
+        - title: Other
+          options:
+              - Toast & Butter
+              - Hot Sausage Roll
 ---
 
 <section
@@ -12,6 +125,13 @@ hover_panel__subtitle: 26 High Street, Alcester
     <h1 class="hover_panel__title">{{page.hover_panel__title}}</h1>
     <p class="hover_panel__subtitle">{{page.hover_panel__subtitle}}</p>
 </section>
+<section>{% include content_row.html content=page.row1 %}</section>
+<section>{% include content_row.html content=page.row2 reverse=true %}</section>
+<section>{% include menu.html content=page.day_menu %}</section>
+<p> Small or regular size - Drink in or takeaway
+Alternative milks – Coconut, Almond, Soya, Oat.</p>
+<p>Sandwiches are available on white or brown bloomer bread,
+  served with a salad garnish & crisps</p>
 <section>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.6003023640933!2d-1.8727405233394394!3d52.21431065881697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870c3795c55d07b%3A0x7f668d7e9395675a!2sThe%20Lounge%20%4026!5e0!3m2!1sen!2suk!4v1757862722862!5m2!1sen!2suk"
