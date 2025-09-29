@@ -1,0 +1,9 @@
+[tools]
+ruby = "3.2.0"
+bundler = "latest"
+
+[tasks]
+bundle = "bundle install"
+
+[tasks."server"]
+run = "bundle exec jekyll serve"
