@@ -438,3 +438,27 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.menu__view {
+    color: var(--lounge-blue);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.menu__view::before,
+.menu__view::after {
+    content: "";
+    height: 2px;
+    background: var(--lounge-red);
+    margin: 0 30px;
+    width: 120px;
+}
+
