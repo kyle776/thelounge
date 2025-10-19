@@ -2,3 +2,8 @@
 ---
 
 @import "tailwindcss";
+
+@theme {
+    --color-lounge-blue: rgb(50 65 94);
+    --color-lounge-red: rgb(201 101 112);
+}
