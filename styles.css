@@ -3,11 +3,6 @@
     --lounge-red: rgba(201, 101, 112);
     --white: rgba(255, 255, 255);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* Utility classes */
 .text-responsive {
     font-size: var(--font-size, 18px);
@@ -461,4 +456,3 @@ body {
     margin: 0 30px;
     width: 120px;
 }
-
