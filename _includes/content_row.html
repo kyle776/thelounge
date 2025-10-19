@@ -1,13 +1,26 @@
-<div class="content_row {% if include.reverse %}reverse{% endif %}">
-    <div>
-        <h2 class="section__title">{{ include.content.title }}</h2>
-        <ul>
+<div
+    class="grid grid-cols-2 max-md:grid-cols-1 items-center gap-5 mt-16 mx-24 max-md:mx-5 max-md:text-center {% if include.reverse %}[direction:rtl]{% endif %}"
+>
+    <div class="{% if include.reverse %}[direction:ltr]{% endif %}">
+        <h2
+            class="text-lounge-blue text-[30px] font-bold mb-[20px] flex items-center text-center justify-center before:content-[''] before:h-[2px] before:bg-lounge-red before:mx-[30px] before:w-[120px] after:content-[''] after:h-[2px] after:bg-lounge-red after:mx-[30px] after:w-[120px]"
+        >
+            {{ include.content.title }}
+        </h2>
+        <ul class="list-none">
             {% for para in include.content.paragraphs %}
-            <li class="card-text">{{ para.content }}</li>
+            <li class="text-gray-500 text-base leading-[1.6] mb-4">
+                {{ para.content }}
+            </li>
             {% endfor %}
         </ul>
     </div>
-    <div>
-        <img class="content_row__image" src="{{ include.content.image }}" />
+    <div
+        class="max-md:hidden {% if include.reverse %}[direction:ltr]{% endif %}"
+    >
+        <img
+            class="w-full max-w-full aspect-square object-cover block"
+            src="{{ include.content.image }}"
+        />
     </div>
 </div>
