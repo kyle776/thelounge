@@ -1,7 +1,7 @@
 <div
-    class="grid grid-cols-2 max-md:grid-cols-1 items-center gap-5 mt-16 mx-24 max-md:mx-5 max-md:text-center {% if include.reverse %}[direction:rtl]{% endif %}"
+    class="grid grid-cols-2 max-md:grid-cols-1 items-center gap-5 mt-16 mx-24 max-md:mx-5 max-md:text-center"
 >
-    <div class="{% if include.reverse %}[direction:ltr]{% endif %}">
+    <div class="{% if include.reverse %}order-2{% endif %}">
         <h2
             class="text-lounge-blue text-[30px] font-bold mb-[20px] flex items-center text-center justify-center before:content-[''] before:h-[2px] before:bg-lounge-red before:mx-[30px] before:w-[120px] after:content-[''] after:h-[2px] after:bg-lounge-red after:mx-[30px] after:w-[120px]"
         >
@@ -15,11 +15,9 @@
             {% endfor %}
         </ul>
     </div>
-    <div
-        class="max-md:hidden {% if include.reverse %}[direction:ltr]{% endif %}"
-    >
+    <div class="max-md:hidden {% if include.reverse %}order-1{% endif %}">
         <img
-            class="w-full max-w-full aspect-square object-cover block"
+            class="w-full aspect-square object-cover"
             src="{{ include.content.image }}"
         />
     </div>
