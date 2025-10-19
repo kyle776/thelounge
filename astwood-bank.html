@@ -128,18 +128,19 @@ opening_hours:
     - Saturday – 4.00pm – 11.00pm
 ---
 
+<!-- Hero Section -->
 <section
-    class="hover_panel"
-    style="--hover-panel-url: url(&quot;images/lounge-card.jpeg&quot;)"
+    class="flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat h-[500px] overflow-auto p-5"
+    style="background-image: url(&quot;images/lounge-card.jpeg&quot;)"
 >
-    <h1 class="hover_panel__title">{{page.hover_panel__title}}</h1>
-    <p class="hover_panel__subtitle">{{page.hover_panel__subtitle}}</p>
+    <h1 class="text-[58px] text-white">{{page.hover_panel__title}}</h1>
+    <h1 class="text-[32px] text-white">{{page.hover_panel__subtitle}}</h1>
 </section>
 <section>{% include content_row.html content=page.row1 %}</section>
 <section>{% include content_row.html content=page.row2 reverse=true %}</section>
 <section>{% include menu.html content=page.drinks_menu %}</section>
 <section>{% include opening_hours.html content=page.opening_hours %}</section>
-<section style="margin-top: 25px">
+<section class="mt-[25px]">
     We can seat up to 34 inside and 8 at the front outside of the shop
 </section>
 <section>
