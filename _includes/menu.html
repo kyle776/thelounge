@@ -1,10 +1,20 @@
-<div class="menu">
-    <div class="section__title">{{ include.content.title }}</div>
-    <div class="menu__row">
+<div class="m-[25px_35px]">
+    <h2
+        class="text-lounge-blue text-[30px] font-bold mb-[20px] flex items-center text-center justify-center before:content-[''] before:h-[2px] before:bg-lounge-red before:mx-[30px] before:w-[120px] after:content-[''] after:h-[2px] after:bg-lounge-red after:mx-[30px] after:w-[120px]"
+    >
+        {{ include.content.title }}
+    </h2>
+    <div
+        class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-4 max-md:grid-cols-[repeat(auto-fit,minmax(180px,1fr))] max-sm:grid-cols-1 gap-4"
+    >
         {% for category in include.content.categories %}
-        <div class="menu__category">
-            <div class="section__subtitle">{{ category.title }}</div>
-            <ul>
+        <div>
+            <h3
+                class="text-lounge-blue text-2xl font-bold mb-[20px] flex items-center text-center justify-center"
+            >
+                {{ category.title }}
+            </h3>
+            <ul class="list-none">
                 {% for option in category.options %}
                 <li>{{ option }}</li>
                 {% endfor %}

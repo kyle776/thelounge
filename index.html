@@ -1,126 +1,192 @@
 ---
 layout: default
 ---
+
+<!-- Hero Section -->
 <section
-    class="hover_panel"
-    style="--hover-panel-url: url(&quot;images/img2.jpg&quot;)"
+    class="flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat h-[500px] overflow-auto p-5"
+    style="background-image: url(&quot;images/img2.jpg&quot;)"
 >
-    <h1 class="hover_panel__title">GIN & COCKTAIL BAR</h1>
+    <h1 class="text-[58px] text-white">GIN & COCKTAIL BAR</h1>
     <!--TODO I think we can delete this -->
-    <!--<p class="hover_panel__subtitle">Alcester and Astwood Bank</p>-->
+    <!--<p class="text-[32px] text-white">Alcester and Astwood Bank</p>-->
 </section>
-<section class="content">
-    <h1 class="section__title">Locations</h1>
-    <div class="locations">
-        <div class="lounge-card">
-            <div class="card-image">
-                <img src="images/lounge-card.jpeg" />
+
+<!-- Locations Section -->
+<section
+    class="flex flex-col justify-around p-[60px] md:p-5 max-md:items-center"
+>
+    <h1
+        class="text-lounge-blue text-[30px] font-bold mb-5 flex items-center text-center justify-center before:content-[''] before:h-[2px] before:bg-lounge-red before:mx-[30px] before:w-[120px] after:content-[''] after:h-[2px] after:bg-lounge-red after:mx-[30px] after:w-[120px]"
+    >
+        Locations
+    </h1>
+    <div class="flex flex-wrap justify-around gap-5">
+        <!-- Astwood Bank Card -->
+        <div
+            class="max-w-[600px] w-full bg-white shadow-[0_8px_32px_rgba(0,0,0,0.1)] overflow-hidden flex-[1_1_300px] min-w-[250px] max-md:max-w-full max-md:min-w-0"
+        >
+            <div class="w-full">
+                <img
+                    src="images/lounge-card.jpeg"
+                    class="w-full h-auto block"
+                />
             </div>
-            <div class="card-content">
-                <h2 class="card-title">
+            <div class="p-8 md:p-6 max-md:p-5 text-center bg-white">
+                <h2
+                    class="text-2xl md:text-xl max-md:text-lg font-bold text-gray-800 mb-5 leading-[1.3]"
+                >
                     The Lounge, 1244 Evesham Road, Astwood Bank
                 </h2>
-                <p class="card-subtitle">
+                <p class="text-lg text-gray-600 mb-5 font-medium">
                     Louise, Karl and Team welcome you to The Lounge!
                 </p>
-                <p class="card-text">
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
                     We took over The Lounge in February 2020 – a month before
                     the pandemic and were forced to go into lockdown, not the
                     best timing, but we are still here and going strong
                 </p>
-                <p class="card-text">
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
                     Through lockdown with all the imposed restrictions we were
                     the first establishment in Redditch to open for takeaway
                     cocktails keeping everyone happy and hydrated; from locals
                     to those passing through on their way home from work.
                 </p>
-                <p class="card-text">
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
                     The Lounge is a small Gin & Cocktail Bar situated on Evesham
                     Road in Astwood Bank that can seat up to 32 cocktail lovers
                     inside with a small seating area at the front for 8 people.
                 </p>
-                <button class="learn-more-btn">Learn More</button>
+                <button
+                    class="bg-lounge-red text-white border-none py-4 px-8 md:py-3 md:px-6 max-md:py-3 max-md:px-6 text-lg md:text-base font-semibold rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out mt-2 hover:bg-lounge-red/90 hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(201,101,112,0.3)]"
+                >
+                    Learn More
+                </button>
             </div>
         </div>
-        <div class="lounge-card">
-            <div class="card-image">
-                <img src="images/lounge-26-card.jpeg" />
+
+        <!-- Alcester Card -->
+        <div
+            class="max-w-[600px] w-full bg-white shadow-[0_8px_32px_rgba(0,0,0,0.1)] overflow-hidden flex-[1_1_300px] min-w-[250px] max-md:max-w-full max-md:min-w-0"
+        >
+            <div class="w-full">
+                <img
+                    src="images/lounge-26-card.jpeg"
+                    class="w-full h-auto block"
+                />
             </div>
-            <div class="card-content">
-                <h2 class="card-title">
-                  The Lounge @26, 26 High Street, Alcester
+            <div class="p-8 md:p-6 max-md:p-5 text-center bg-white">
+                <h2
+                    class="text-2xl md:text-xl max-md:text-lg font-bold text-gray-800 mb-5 leading-[1.3]"
+                >
+                    The Lounge @26, 26 High Street, Alcester
                 </h2>
-                <p class="card-subtitle">
+                <p class="text-lg text-gray-600 mb-5 font-medium">
                     Louise, Karl and Team welcome you to The Lounge @26!
                 </p>
-                <p class="card-text">
-                  Taking over a Coffee Shop during the second lockdown in November 2020 may not have been the best idea but we did it anyway and haven’t looked back!
-                  We are now an award winning establishment after being nominated for, and winning Best Café in Warwickshire,
-                  Best Café in the Midlands and then Best Café in England in 2021.
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
+                    Taking over a Coffee Shop during the second lockdown in
+                    November 2020 may not have been the best idea but we did it
+                    anyway and haven't looked back! We are now an award winning
+                    establishment after being nominated for, and winning Best
+                    Café in Warwickshire, Best Café in the Midlands and then
+                    Best Café in England in 2021.
                 </p>
-                <p class="card-text">
-                  During lockdown and restrictions we were able to keep customers warm and caffeinated with takeaway coffees,
-                  cakes and food, and took that time to develop the outside area and decorate.
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
+                    During lockdown and restrictions we were able to keep
+                    customers warm and caffeinated with takeaway coffees, cakes
+                    and food, and took that time to develop the outside area and
+                    decorate.
                 </p>
-                <p class="card-text">
-                  You’ll find us situated on the High Street in Alcester in a quirky Grade II
-                  listed building that can seat up to 30 inside, 8 outside on the high street and up to 40 in what
-                  we like to call our secret garden.
+                <p
+                    class="text-gray-500 text-base md:text-sm leading-[1.6] mb-4"
+                >
+                    You'll find us situated on the High Street in Alcester in a
+                    quirky Grade II listed building that can seat up to 30
+                    inside, 8 outside on the high street and up to 40 in what we
+                    like to call our secret garden.
                 </p>
-                <button class="learn-more-btn">Learn More</button>
+                <button
+                    class="bg-lounge-red text-white border-none py-4 px-8 md:py-3 md:px-6 max-md:py-3 max-md:px-6 text-lg md:text-base font-semibold rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out mt-2 hover:bg-lounge-red/90 hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(201,101,112,0.3)]"
+                >
+                    Learn More
+                </button>
             </div>
         </div>
     </div>
 </section>
-<section class="container">
-    <h1 class="section__title">Award Winning</h1>
-    <p class="section__paragraph">
+
+<!-- Award Winning Section -->
+<section>
+    <h1
+        class="text-lounge-blue text-[30px] font-bold mb-[20px] flex items-center text-center justify-center before:content-[''] before:h-[2px] before:bg-lounge-red before:mx-[30px] before:w-[120px] after:content-[''] after:h-[2px] after:bg-lounge-red after:mx-[30px] after:w-[120px]"
+    >
+        Award Winning
+    </h1>
+    <p class="mt-2 mb-2 text-gray-500">
         We are thrilled to announce we were the winners of Best Cafe in England
         in 2021 and have been recommended on Restaurant Guru!
     </p>
 
     <!-- Grid layout for larger screens -->
-    <div class="image-container">
+    <div
+        class="hidden md:grid grid-cols-3 gap-[25px] max-w-[1098px] mx-auto my-[30px]"
+    >
         <img
-            class="square-image"
+            class="w-full aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
             src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Best+in+England.jpg"
         />
         <img
-            class="square-image"
+            class="w-full aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
             src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Team+Lounge%21.png"
         />
         <img
-            class="square-image"
+            class="w-full aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
             src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Screenshot+2022-10-21+at+13.31.11.png"
         />
     </div>
 
     <!-- Carousel for mobile screens -->
-    <div class="carousel-container">
-        <div class="carousel-track" id="carousel-track">
+    <div
+        class="md:hidden relative max-w-[250px] mx-auto my-[30px] overflow-hidden"
+    >
+        <div
+            class="flex transition-transform duration-300 ease-in-out"
+            id="carousel-track"
+        >
             <img
-                class="square-image"
+                class="w-[250px] h-[250px] flex-shrink-0 aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
                 src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Best+in+England.jpg"
             />
             <img
-                class="square-image"
+                class="w-[250px] h-[250px] flex-shrink-0 aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
                 src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Team+Lounge%21.png"
             />
             <img
-                class="square-image"
+                class="w-[250px] h-[250px] flex-shrink-0 aspect-square object-cover shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
                 src="https://irp.cdn-website.com/ed3314ea/dms3rep/multi/Screenshot+2022-10-21+at+13.31.11.png"
             />
         </div>
-        <div class="carousel-buttons">
+        <div class="flex justify-center gap-[10px] mt-[15px]">
             <button
-                class="carousel-btn"
+                class="bg-lounge-red text-white border-none py-2 px-4 rounded-[20px] cursor-pointer text-sm hover:bg-lounge-red/90 disabled:bg-gray-300 disabled:cursor-not-allowed"
                 id="prev-btn"
                 onclick="moveCarousel(-1)"
             >
                 ‹ Prev
             </button>
             <button
-                class="carousel-btn"
+                class="bg-lounge-red text-white border-none py-2 px-4 rounded-[20px] cursor-pointer text-sm hover:bg-lounge-red/90 disabled:bg-gray-300 disabled:cursor-not-allowed"
                 id="next-btn"
                 onclick="moveCarousel(1)"
             >
